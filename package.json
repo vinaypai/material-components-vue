@@ -29,7 +29,7 @@
     "test": "cross-env NODE_ENV=testing jest",
     "test:watch": "npm run test -- --watch",
     "test:updateSnapshot": "npm run test -- --updateSnapshot",
-    "prepare": "npm build:min"
+    "prepare": "npm run build:min"
   },
   "dependencies": {
     "material-components-web": "3.2.0"

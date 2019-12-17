@@ -119,7 +119,7 @@ export default {
   computed: {
     classes () {
       return {
-        'mdc-text-field--fullwidth': this.fullWidth && this.noLabel && !this.outlined,
+        'mdc-text-field--fullwidth': this.fullWidth && !this.outlined,
         'mdc-text-field--with-leading-icon': this.hasLeadingIcon,
         'mdc-text-field--with-trailing-icon': this.hasTrailingIcon,
         'mdc-text-field--outlined': this.outlined && !this.fullWidth,

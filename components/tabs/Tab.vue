@@ -7,7 +7,6 @@
     :aria-selected="active"
     role="tab"
     @MDCTab:interacted="onInteracted"
-    v-on="$listeners"
   >
     <span class="mdc-tab__content">
       <slot name="icon" />
@@ -54,7 +53,7 @@
     aria-selected="false"
     role="tab"
     @MDCTab:interacted="onInteracted"
-    v-on="$listeners"
+    @click.prevent
   >
     <span class="mdc-tab__content">
       <slot name="icon" />
